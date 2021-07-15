@@ -1,0 +1,156 @@
+/*--------------------
+Body
+--------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ease: cubic-bezier(0.29, 0.57, 0.12, 0.99);
+  --duration: .6s;
+  --size: 850px;
+  --scaleMask: .53;
+  --scaleBtn: 1;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --size: 600px;
+    --scaleMask: .75;
+    --scaleBtn: .8;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --size: 400px;
+    --scaleMask: .5;
+    --scaleBtn: .7;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --size: 300px;
+    --scaleMask: .375;
+    --scaleBtn: .6;
+  }
+}
+
+.carousel {
+  position: relative;
+  z-index: 1;
+  width: var(--size);
+  height: var(--size);
+  left: 350px;
+  top: 100px;
+
+}
+
+.carousel--play {
+  position: absolute;
+  z-index: 100000000000;
+  bottom: 400px;
+  left: 340px;
+  -webkit-transition: -webkit-transform 0.2s var(--ease);
+  transition: -webkit-transform 0.2s var(--ease);
+  transition: transform 0.2s var(--ease);
+  transition: transform 0.2s var(--ease), -webkit-transform 0.2s var(--ease);
+  width: 65px;
+  height: 65px;
+  background: #f0e98e;
+  box-shadow: 0 10px 20px -6px #e7e7c8;
+  border-radius: 50%;
+  font-size: 12px;
+  color: rgb(112, 112, 112);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.carousel--play:before {
+  content: '';
+  position: absolute;
+  z-index: 100000000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.4s var(--ease);
+  transition: -webkit-transform 0.4s var(--ease);
+  transition: transform 0.4s var(--ease);
+  transition: transform 0.4s var(--ease), -webkit-transform 0.4s var(--ease);
+}
+
+.carousel--play:hover:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.carousel--play:active {
+  -webkit-transform: scale(calc(var(--scaleBtn) * .9)) rotate(-5deg);
+  transform: scale(calc(var(--scaleBtn) * .9)) rotate(-5deg);
+}
+
+.carousel svg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  fill: #e7e7e7;
+  pointer-events: none;
+}
+
+.carousel svg #mask {
+  -webkit-transform: scale(var(--scaleMask));
+  transform: scale(var(--scaleMask));
+}
+
+.carousel--images {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: url(#mask);
+  clip-path: url(#mask);
+  overflow: hidden;
+}
+
+.carousel img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: opacity var(--duration) var(--ease), -webkit-transform var(--duration) var(--ease);
+  transition: opacity var(--duration) var(--ease), -webkit-transform var(--duration) var(--ease);
+  transition: opacity var(--duration) var(--ease), transform var(--duration) var(--ease);
+  transition: opacity var(--duration) var(--ease), transform var(--duration) var(--ease), -webkit-transform var(--duration) var(--ease);
+  opacity: 0;
+  -webkit-transform: scale(0.9) translateZ(0);
+  transform: scale(0.9) translateZ(0);
+}
+
+.carousel img.active {
+  -webkit-transform: scale(1) translateZ(0);
+  transform: scale(1) translateZ(0);
+  opacity: 1;
+}

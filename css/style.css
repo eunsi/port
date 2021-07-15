@@ -1,0 +1,636 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'drfont_daraehand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/drfont_daraehand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.inner {
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cont>div {
+    height: 100vh;
+    overflow: hidden;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    z-index: 99999;
+}
+
+nav ul {
+    float: right;
+}
+
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 15px 15px;
+    display: block;
+    font-size: 1rem;
+}
+
+nav ul li.active {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/*---------page1-----------*/
+
+.page1 {
+    background-color: rgb(36, 36, 36);
+    padding-left: 100px;
+    padding-top: 400px;
+    box-sizing: border-box;
+}
+
+.page1 p {
+    color: rgb(255, 255, 110);
+    font-size: 50px;
+    width: 100%;
+    font-weight: 300;
+}
+
+/*---------page2-----------*/
+
+.page2 div {
+    width: 90%;
+}
+
+.page2 div img {
+    margin-top: 100px;
+    width: 100%;
+    margin-left: 100px;
+}
+
+/*---------page3-----------*/
+
+.page3 {
+    padding-left: 330px;
+    box-sizing: border-box;
+    padding-top: 200px;
+    padding-right: 80px;
+}
+
+.page3 .left_box {
+    float: left;
+    width: 400px;
+    background-image: url(../img/underbar.png);
+    background-repeat: no-repeat;
+    text-align: left;
+    background-position: 0 65px;
+    margin-top: 130px;
+}
+
+.page3 .left_box h2 {
+    font-size: 80px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    line-height: 100px;
+}
+
+.page3 .right_box {
+    float: right;
+    width: 650px;
+    margin-top: 20px;
+}
+
+.page3 .right_box .title {
+    font-weight: bold;
+    font-size: 33px;
+    cursor: pointer;
+    margin-bottom: 13px;
+}
+
+.page3 .right_box .title span {
+    font-size: 15px;
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+.page3 .right_box .sub1 {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.page3 .right_box .sub2 {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.page3 .right_box .sub3 {
+    font-size: 16px;
+}
+
+
+.page3 .right_box .none {
+    display: none;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.page3 .right_box .none2 {
+    display: none;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.page3 .right_box .none3 {
+    display: none;
+    font-size: 16px;
+}
+
+
+/*---------page4-----------*/
+
+
+.page4 {
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.page4>h2 {
+    font-family: 'drfont_daraehand';
+    font-size: 4rem;
+    background-image: url(../img/green_underbar.png);
+    background-repeat: no-repeat;
+    background-position: center 50px;
+}
+
+.page4 .slide_page1 .left .img1 {
+    float: left;
+}
+
+.page4 .slide_page1 .left .img2 {
+    float: left;
+}
+
+.page4 .slide_page1 .left .img1 {
+    margin-left: 200px;
+}
+
+.page4 .slide_page1 .right {
+    text-align: left;
+    margin-left: 950px;
+    margin-top: 150px;
+}
+
+.page4 .slide_page1 .right h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.page4 .slide_page1 .right .p1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.page4 .slide_page1 .right .a1 {
+    font-size: 20px;
+    padding: 35px;
+    font-weight: 300;
+    margin-left: 300px;
+}
+
+.page4 .slide_page1 .right .a2 {
+    font-size: 20px;
+    padding: 30px;
+    font-weight: 300;
+}
+
+
+.page4 .slide_page1 .right .a1:hover {
+    background-image: url(../img/hover_bar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page4 .slide_page1 .right .a2:hover {
+    background-image: url(../img/hover_bar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.page4 .slide_page1 .right .p2 {
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.page4 .slide_page2 .left img {
+    float: left;
+}
+
+.page4 .slide_page2 .left .img1 {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    animation-name: page2_img1;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+@keyframes page2_img1 {
+    0% {
+        top: -500px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5%;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.page4 .slide_page2 .left .img2 {
+    position: absolute;
+    left: 300px;
+    top: 0;
+    animation-name: page2_img2;
+    animation-duration: 5s;
+    animation-iteration-count: initial;
+}
+
+@keyframes page2_img2 {
+    0% {
+        top: -600px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5%;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.page4 .slide_page2 .left .img3 {
+    position: absolute;
+    left: 470px;
+    top: 170px;
+    animation-name: page2_img3;
+    animation-duration: 8s;
+    animation-iteration-count: initial;
+}
+
+@keyframes page2_img3 {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5%;
+    }
+
+    100% {
+        top: 170px;
+        opacity: 1;
+    }
+}
+
+.page4 .slide_page2 .right {
+    text-align: left;
+    margin-left: 950px;
+    margin-top: 150px;
+}
+
+
+.page4 .slide_page2 .right h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.page4 .slide_page2 .right .p1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.page4 .slide_page2 .right .a1 {
+    font-size: 20px;
+    padding: 35px;
+    font-weight: 300;
+    margin-left: 300px;
+}
+
+.page4 .slide_page2 .right .a2 {
+    font-size: 20px;
+    padding: 30px;
+    font-weight: 300;
+}
+
+
+.page4 .slide_page2 .right .a1:hover {
+    background-image: url(../img/hover_bar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page4 .slide_page2 .right .a2:hover {
+    background-image: url(../img/hover_bar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.page4 .slide_page2 .right .p2 {
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.page4 .slide_page3 .left .img1 {
+    position: absolute;
+    width: 30%;
+    left: 140px;
+    top: 100px;
+    animation-name: page3_img1;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+@keyframes page3_img1 {
+    0% {
+        top: -150px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5%;
+    }
+
+    100% {
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+.page4 .slide_page3 .left .img1 img {
+    width: 100%;
+}
+
+.page4 .slide_page3 .left .img2 {
+    position: absolute;
+    width: 44%;
+    left: 240px;
+    top: 270px;
+    animation-name: page3_img2;
+    animation-duration: 5.5s;
+    animation-iteration-count: initial;
+}
+
+@keyframes page3_img2 {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5%;
+    }
+
+    100% {
+        top: 270px;
+        opacity: 1;
+    }
+}
+
+.page4 .slide_page3 .left .img2 img {
+    width: 100%;
+}
+
+
+.page4 .slide_page3 .left .img3 {
+    position: absolute;
+    width: 30%;
+    left: 380px;
+    top: 240px;
+    animation-name: page3_img3;
+    animation-duration: 8s;
+    animation-iteration-count: initial;
+}
+
+@keyframes page3_img3 {
+    0% {
+        top: -150px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5%;
+    }
+
+    100% {
+        top: 240px;
+        opacity: 1;
+    }
+}
+
+.page4 .slide_page3 .left .img3 img {
+    width: 100%;
+}
+
+
+.page4 .slide_page3 .right {
+    text-align: left;
+    margin-left: 950px;
+    margin-top: 150px;
+}
+
+
+.page4 .slide_page3 .right h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.page4 .slide_page3 .right .p1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.page4 .slide_page3 .right .a1 {
+    font-size: 20px;
+    padding: 35px;
+    font-weight: 300;
+    margin-left: 300px;
+}
+
+.page4 .slide_page3 .right .a2 {
+    font-size: 20px;
+    padding: 30px;
+    font-weight: 300;
+}
+
+
+.page4 .slide_page3 .right .a1:hover {
+    background-image: url(../img/hover_bar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page4 .slide_page3 .right .a2:hover {
+    background-image: url(../img/hover_bar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.page4 .slide_page3 .right .p2 {
+    font-weight: 300;
+    margin-bottom: 123px;
+}
+
+
+
+
+
+/*---------page5-----------*/
+
+.page5 {
+    text-align: center;
+}
+
+.page5>h2 {
+    font-family: 'drfont_daraehand';
+    font-size: 4rem;
+    background-image: url(../img/design_underbar.png);
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.page5 .inner .top {
+    display: flex;
+    margin-bottom: 30px;
+    height: 420px;
+}
+
+.page5 .inner .top .design_1 {
+    flex: 5;
+    background-color: burlywood;
+    margin-right: 30px;
+}
+
+.page5 .inner .top .design_2 {
+    flex: 2.5;
+    background-color: rgb(177, 137, 84);
+    margin-right: 30px;
+}
+
+
+.page5 .inner .top .design_3 {
+    flex: 2.5;
+    background-color: rgb(88, 83, 77);
+}
+
+.page5 .inner .bottom {
+    display: flex;
+}
+
+.page5 .inner .bottom .design_4 {
+    flex: 6.3;
+    height: 250px;
+    background-color: cornsilk;
+    margin-right: 30px;
+}
+
+.page5 .inner .bottom .design_5 {
+    flex: 3.7;
+    height: 250px;
+    background-color: darkgray;
+}
+
+
+
+/*---------page6-----------*/
+
+.page6 {
+    text-align: center;
+}
+
+.page6>h2 {
+    font-family: 'drfont_daraehand';
+    font-size: 3.7rem;
+    background-image: url(../img/contact_under.png);
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    margin-top: 18px;
+}
+
+.page6 .left {
+    float: left;
+}
+
+.page6 .right {
+    text-align: left;
+    margin-left: 900px;
+    margin-top: 250px;
+}
+
+.page6 .right h2 {
+    font-weight: 400;
+}
+
+.page6 .right h2 span {
+    font-weight: 500;
+}
+
+.page6 .right .e-mail {
+    float: left;
+}
+
+.page6 .right button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(173, 173, 173);
+    width: 50px;
+}
+
+.page6 .right button img{
+    width: 40%;
+    margin-top: 11px;
+    margin-left: -18px;
+}
+
+
+/*-----slide------*/
+
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+}
+
+.bx-wrapper .bx-pager-item {
+    display: none;
+}
